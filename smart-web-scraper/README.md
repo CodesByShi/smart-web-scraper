@@ -1,4 +1,5 @@
 # Smart Web Scraper
+A Python based web scraping tool that extracts data using keyword search and exports results into CSV, Excel & JSON format.
 
 A keyword-driven product scraper built with Python, `requests`, and `BeautifulSoup`, with a Selenium fallback for JavaScript-rendered pages. Built as a portfolio project to demonstrate clean, modular Python architecture — not a one-off script.
 
@@ -16,6 +17,13 @@ The scraper targets [books.toscrape.com](https://books.toscrape.com), a sandbox 
 - **Offline unit tests** for the parsing logic using a saved HTML fixture, so tests don't depend on network access
 
 Extracted fields per product: name, price, rating, product URL, image URL, availability, category.
+## Tech Stack
+- Python
+BeautifulSoup4
+Selenium
+Pandas
+OpenPyXl
+lxml
 
 ## Project Structure
 
@@ -126,7 +134,9 @@ The Great Railway Bazaar,£30.54,1,https://books.toscrape.com/catalogue/...,http
 ```
 
 ## Screenshots
-
+Screenshots [Terminal Output]"C:\Users\Shilpy\Pictures\Screenshots\Screenshot (1).png"
+            [CSV Output]"C:\Users\Shilpy\Pictures\Screenshots\Screenshot (2).png"
+            [JSON Output]"C:\Users\Shilpy\Pictures\Screenshots\Screenshot (3).png"
 Run a search locally and add your own terminal/output screenshots here — this repo intentionally doesn't ship fabricated screenshots.
 
 ## Error Handling
@@ -170,3 +180,5 @@ To point this project at a different site, check that site's `robots.txt` and te
 - A small Flask/FastAPI wrapper to expose the scraper as an API
 - Persist results to SQLite/Postgres instead of flat files
 - Scrapy migration for built-in throttling, caching, and pipelines
+## Author 
+CodesByShi
